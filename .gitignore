@@ -1,0 +1,30 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Anaconda / local environment
+anaconda_projects/
+env/
+venv/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# VS Code settings
+.vscode/
+
+# Large datasets
+Excel/Sales.csv
+*.zip
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp
