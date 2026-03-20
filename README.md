@@ -8,9 +8,6 @@ This repository contains a Power BI project focused on tracking and analyzing sa
 * **Custom Visuals**: Utilizes the `BarChartWithTopN` custom visual for enhanced data representation.
 * **Performance Tracking**: Compares actual sales data against budget targets to highlight variances and trends.
 
-## Prerequisites
-* [Power BI Desktop](https://powerbi.microsoft.com/desktop/) (to open and edit the `.pbix` file).
-
 ## Getting Started
 1. Clone this repository to your local machine.
 2. Open the `.pbix` file using Power BI Desktop.
