@@ -1,21 +1,43 @@
-# Sales and Budget Performance Analysis
+# 📊 Sales_Budget_Performance
 
-## Overview
-This repository contains a Power BI project focused on tracking and analyzing sales against allocated budgets. The interactive dashboard provides insights into revenue trends, budget variance, and top-performing metrics.
+## 📝 Project Overview
+This project is an end-to-end data analysis of retail sales performance. By examining a robust dataset containing product details, campaign metrics, regional geography, and unit financials, this project aims to uncover actionable business insights regarding profitability, regional dominance, and product performance.
 
-## Features
-* **Interactive Dashboards**: Built with Power BI to visualize key sales metrics and performance indicators.
-* **Custom Visuals**: Utilizes the `BarChartWithTopN` custom visual for enhanced data representation.
-* **Performance Tracking**: Compares actual sales data against budget targets to highlight variances and trends.
+## 🗄️ Dataset Description
+The dataset consists of transactional sales records with the following key data points:
+* **Product Data:** `ProductID`, `Product` (e.g., Maximus Urban), `Category`, `Segment`, `Manufacturer`
+* **Financials:** `Units` sold, `Unit Cost`, `Unit Price`
+* **Geography:** `ZipCode`, `City`, `State`, `Region`, `District`, `Country` (e.g., US East Region focus)
+* **Marketing & Customers:** `CustomerID`, `Campaign` IDs, `Date` of transaction
 
-## Getting Started
-1. Clone this repository to your local machine.
-2. Open the `.pbix` file using Power BI Desktop.
-3. (Optional) Update the dataset connections in the Power Query Editor to point to your specific local or cloud data sources.
-4. Refresh the data model to view the latest metrics.
+## 🎯 Key Objectives
+1. **Profitability Analysis:** Calculate and analyze total revenue, total cost, and gross profit margins across different product segments.
+2. **Geographical Insights:** Identify top-performing regions, states, and districts.
+3. **Product Performance:** Determine which categories and specific products drive the most volume and highest margins.
+4. **Campaign Effectiveness:** Evaluate sales spikes and unit volume against specific marketing campaigns.
 
-## Data Model
-The underlying data model integrates sales transaction records with budget targets, enabling time-intelligence and comparative analysis across different dimensions.
+## 📈 Visualization & Dashboard Structure
+To provide a comprehensive view of the business, the reporting is broken down into a structured, 5-page interactive dashboard:
 
-## License
-[Choose a License, e.g., MIT License]
+1. **Executive Summary (Overview):** * High-level KPIs: Total Revenue, Total Profit, Profit Margin %, Total Units Sold.
+   * Trend line showing revenue over time.
+2. **Product & Category Deep Dive:** * Bar charts comparing revenue and profit by `Category` and `Segment`.
+   * Matrix/Pivot tables showing top 10 and bottom 10 performing products.
+3. **Regional Performance Map:**
+   * Geospatial map visualizing sales volume by `State` and `City`.
+   * Treemap of sales distribution by `Region` and `District`.
+4. **Campaign & Customer Insights:**
+   * Analysis of unit sales grouped by `Campaign` ID to measure marketing ROI.
+   * Customer purchase frequency distribution.
+5. **Cost vs. Pricing Analysis:**
+   * Scatter plot analyzing the relationship between `Unit Cost`, `Unit Price`, and overall volume.
+
+## 🛠️ Tech Stack & Tools
+* **Data Cleaning & Preparation:** Python (Pandas) / Power Query
+* **Exploratory Data Analysis (EDA):** Excel (Pivot Tables)
+* **Interactive Visualization:** Power BI
+* **Calculations:** DAX (Data Analysis Expressions) for custom business metrics
+
+1. Clone the repository to your local machine.
+2. Ensure the raw data file (e.g., `sales_data.csv` or `.xlsx`) is located in the `/data` folder.
+3. Open the `.pbix` file to view the interactive dashboard, or run the Jupyter Notebook (`.ipynb`) to see the Python data cleaning and initial pivot table steps.
